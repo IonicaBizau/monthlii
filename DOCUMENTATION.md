@@ -2,19 +2,9 @@
 
 You can see below the API reference of this module.
 
-### `monthlii(a, b)`
-Node.js client for Monthlii by Reality Finance.
-
-#### Params
-
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
-
-#### Return
-- **Number** Return description.
-
 ### constructor
 
+monthlii
 Create a new Monthlii client.
 
 #### Params
