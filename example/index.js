@@ -1,5 +1,17 @@
 "use strict";
 
-const monthlii = require("../lib");
+const Monthlii = require("../lib");
 
-console.log(monthlii());
+const monthlii = new Monthlii({
+    api_key: "your-api-key",
+    partner_id: "your-partner-id"
+});
+
+monthlii.calculateQuote({
+    financeBalance: 3000,
+    rentalTerm: 12,
+}).then(({ data }) => {
+    console.log(data);
+}).catch(error => {
+    console.error(error);
+});
